@@ -13,6 +13,11 @@
 		72DD0958269B572000A687A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DD0956269B572000A687A1 /* Main.storyboard */; };
 		72DD095A269B572200A687A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DD0959269B572200A687A1 /* Assets.xcassets */; };
 		72DD095D269B572200A687A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DD095B269B572200A687A1 /* LaunchScreen.storyboard */; };
+		72DD0966269B594800A687A1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0965269B594800A687A1 /* ApiService.swift */; };
+		72DD0969269B5A2900A687A1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0968269B5A2900A687A1 /* Book.swift */; };
+		72DD096B269B5A9800A687A1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096A269B5A9800A687A1 /* Offer.swift */; };
+		72DD096D269B5ADE00A687A1 /* ManagerBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */; };
+		72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096F269B5FD900A687A1 /* ResponseOffers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		72DD0959269B572200A687A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72DD095C269B572200A687A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72DD095E269B572200A687A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DD0965269B594800A687A1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		72DD0968269B5A2900A687A1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		72DD096A269B5A9800A687A1 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerBooksService.swift; sourceTree = "<group>"; };
+		72DD096F269B5FD900A687A1 /* ResponseOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseOffers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		72DD094F269B572000A687A1 /* recruitment-tests-ahmed-chebbi */ = {
 			isa = PBXGroup;
 			children = (
+				72DD0964269B57F700A687A1 /* Networks */,
 				72DD0950269B572000A687A1 /* AppDelegate.swift */,
 				72DD0952269B572000A687A1 /* SceneDelegate.swift */,
 				72DD0954269B572000A687A1 /* ViewController.swift */,
@@ -65,6 +76,34 @@
 				72DD095E269B572200A687A1 /* Info.plist */,
 			);
 			path = "recruitment-tests-ahmed-chebbi";
+			sourceTree = "<group>";
+		};
+		72DD0964269B57F700A687A1 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				72DD096E269B5FBA00A687A1 /* Response */,
+				72DD0967269B5A1B00A687A1 /* Models */,
+				72DD0965269B594800A687A1 /* ApiService.swift */,
+				72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		72DD0967269B5A1B00A687A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0968269B5A2900A687A1 /* Book.swift */,
+				72DD096A269B5A9800A687A1 /* Offer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72DD096E269B5FBA00A687A1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				72DD096F269B5FD900A687A1 /* ResponseOffers.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DD096B269B5A9800A687A1 /* Offer.swift in Sources */,
+				72DD096D269B5ADE00A687A1 /* ManagerBooksService.swift in Sources */,
 				72DD0955269B572000A687A1 /* ViewController.swift in Sources */,
+				72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */,
 				72DD0951269B572000A687A1 /* AppDelegate.swift in Sources */,
+				72DD0966269B594800A687A1 /* ApiService.swift in Sources */,
+				72DD0969269B5A2900A687A1 /* Book.swift in Sources */,
 				72DD0953269B572000A687A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
