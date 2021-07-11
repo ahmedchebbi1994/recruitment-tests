@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		72DD0951269B572000A687A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0950269B572000A687A1 /* AppDelegate.swift */; };
-		72DD0953269B572000A687A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0952269B572000A687A1 /* SceneDelegate.swift */; };
-		72DD0955269B572000A687A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0954269B572000A687A1 /* ViewController.swift */; };
-		72DD0958269B572000A687A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DD0956269B572000A687A1 /* Main.storyboard */; };
 		72DD095A269B572200A687A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DD0959269B572200A687A1 /* Assets.xcassets */; };
 		72DD095D269B572200A687A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DD095B269B572200A687A1 /* LaunchScreen.storyboard */; };
 		72DD0966269B594800A687A1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0965269B594800A687A1 /* ApiService.swift */; };
@@ -18,14 +15,22 @@
 		72DD096B269B5A9800A687A1 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096A269B5A9800A687A1 /* Offer.swift */; };
 		72DD096D269B5ADE00A687A1 /* ManagerBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */; };
 		72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD096F269B5FD900A687A1 /* ResponseOffers.swift */; };
+		72DD0972269B68DF00A687A1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0971269B68DF00A687A1 /* AppCoordinator.swift */; };
+		72DD0976269B6A4500A687A1 /* BooksListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0975269B6A4500A687A1 /* BooksListCoordinator.swift */; };
+		72DD0978269B6A6300A687A1 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0977269B6A6300A687A1 /* BookViewModel.swift */; };
+		72DD097A269B6AE600A687A1 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0979269B6AE600A687A1 /* BooksListView.swift */; };
+		72DD097C269B6B0A00A687A1 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD097B269B6B0A00A687A1 /* BooksListViewController.swift */; };
+		72DD097E269B6B2E00A687A1 /* BooksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD097D269B6B2E00A687A1 /* BooksListViewModel.swift */; };
+		72DD0981269B6BAA00A687A1 /* ReusableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0980269B6BAA00A687A1 /* ReusableUIView.swift */; };
+		72DD0983269B6BE200A687A1 /* BindableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0982269B6BE200A687A1 /* BindableViewController.swift */; };
+		72DD0986269B6C3900A687A1 /* UIColors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0985269B6C3900A687A1 /* UIColors+Extension.swift */; };
+		72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0988269B6CA300A687A1 /* BookCell.swift */; };
+		72DD098D269BA31E00A687A1 /* LoaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD098C269BA31E00A687A1 /* LoaderImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72DD094D269B572000A687A1 /* recruitment-tests-ahmed-chebbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recruitment-tests-ahmed-chebbi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DD0950269B572000A687A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72DD0952269B572000A687A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72DD0954269B572000A687A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72DD0957269B572000A687A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72DD0959269B572200A687A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72DD095C269B572200A687A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72DD095E269B572200A687A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +39,17 @@
 		72DD096A269B5A9800A687A1 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerBooksService.swift; sourceTree = "<group>"; };
 		72DD096F269B5FD900A687A1 /* ResponseOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseOffers.swift; sourceTree = "<group>"; };
+		72DD0971269B68DF00A687A1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		72DD0975269B6A4500A687A1 /* BooksListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListCoordinator.swift; sourceTree = "<group>"; };
+		72DD0977269B6A6300A687A1 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		72DD0979269B6AE600A687A1 /* BooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
+		72DD097B269B6B0A00A687A1 /* BooksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
+		72DD097D269B6B2E00A687A1 /* BooksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewModel.swift; sourceTree = "<group>"; };
+		72DD0980269B6BAA00A687A1 /* ReusableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableUIView.swift; sourceTree = "<group>"; };
+		72DD0982269B6BE200A687A1 /* BindableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableViewController.swift; sourceTree = "<group>"; };
+		72DD0985269B6C3900A687A1 /* UIColors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Extension.swift"; sourceTree = "<group>"; };
+		72DD0988269B6CA300A687A1 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		72DD098C269BA31E00A687A1 /* LoaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +82,15 @@
 		72DD094F269B572000A687A1 /* recruitment-tests-ahmed-chebbi */ = {
 			isa = PBXGroup;
 			children = (
+				72DD0984269B6C2300A687A1 /* Utils */,
+				72DD097F269B6BA100A687A1 /* Base */,
+				72DD0974269B6A2700A687A1 /* BooksList */,
+				72DD0973269B69BA00A687A1 /* Resources */,
 				72DD0964269B57F700A687A1 /* Networks */,
 				72DD0950269B572000A687A1 /* AppDelegate.swift */,
-				72DD0952269B572000A687A1 /* SceneDelegate.swift */,
-				72DD0954269B572000A687A1 /* ViewController.swift */,
-				72DD0956269B572000A687A1 /* Main.storyboard */,
+				72DD0971269B68DF00A687A1 /* AppCoordinator.swift */,
 				72DD0959269B572200A687A1 /* Assets.xcassets */,
 				72DD095B269B572200A687A1 /* LaunchScreen.storyboard */,
-				72DD095E269B572200A687A1 /* Info.plist */,
 			);
 			path = "recruitment-tests-ahmed-chebbi";
 			sourceTree = "<group>";
@@ -104,6 +121,53 @@
 				72DD096F269B5FD900A687A1 /* ResponseOffers.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		72DD0973269B69BA00A687A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72DD095E269B572200A687A1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72DD0974269B6A2700A687A1 /* BooksList */ = {
+			isa = PBXGroup;
+			children = (
+				72DD097B269B6B0A00A687A1 /* BooksListViewController.swift */,
+				72DD0979269B6AE600A687A1 /* BooksListView.swift */,
+				72DD0987269B6C8C00A687A1 /* Cells */,
+				72DD0975269B6A4500A687A1 /* BooksListCoordinator.swift */,
+				72DD0977269B6A6300A687A1 /* BookViewModel.swift */,
+				72DD097D269B6B2E00A687A1 /* BooksListViewModel.swift */,
+			);
+			path = BooksList;
+			sourceTree = "<group>";
+		};
+		72DD097F269B6BA100A687A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0980269B6BAA00A687A1 /* ReusableUIView.swift */,
+				72DD0982269B6BE200A687A1 /* BindableViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72DD0984269B6C2300A687A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0985269B6C3900A687A1 /* UIColors+Extension.swift */,
+				72DD098C269BA31E00A687A1 /* LoaderImage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		72DD0987269B6C8C00A687A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0988269B6CA300A687A1 /* BookCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +229,6 @@
 			files = (
 				72DD095D269B572200A687A1 /* LaunchScreen.storyboard in Resources */,
 				72DD095A269B572200A687A1 /* Assets.xcassets in Resources */,
-				72DD0958269B572000A687A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,27 +240,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				72DD096B269B5A9800A687A1 /* Offer.swift in Sources */,
+				72DD0976269B6A4500A687A1 /* BooksListCoordinator.swift in Sources */,
 				72DD096D269B5ADE00A687A1 /* ManagerBooksService.swift in Sources */,
-				72DD0955269B572000A687A1 /* ViewController.swift in Sources */,
+				72DD097E269B6B2E00A687A1 /* BooksListViewModel.swift in Sources */,
+				72DD0983269B6BE200A687A1 /* BindableViewController.swift in Sources */,
+				72DD097A269B6AE600A687A1 /* BooksListView.swift in Sources */,
+				72DD097C269B6B0A00A687A1 /* BooksListViewController.swift in Sources */,
+				72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */,
+				72DD0981269B6BAA00A687A1 /* ReusableUIView.swift in Sources */,
 				72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */,
+				72DD0978269B6A6300A687A1 /* BookViewModel.swift in Sources */,
+				72DD0986269B6C3900A687A1 /* UIColors+Extension.swift in Sources */,
+				72DD098D269BA31E00A687A1 /* LoaderImage.swift in Sources */,
 				72DD0951269B572000A687A1 /* AppDelegate.swift in Sources */,
 				72DD0966269B594800A687A1 /* ApiService.swift in Sources */,
+				72DD0972269B68DF00A687A1 /* AppCoordinator.swift in Sources */,
 				72DD0969269B5A2900A687A1 /* Book.swift in Sources */,
-				72DD0953269B572000A687A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72DD0956269B572000A687A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72DD0957269B572000A687A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72DD095B269B572200A687A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -331,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbi/Info.plist";
+				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbi/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbi/Info.plist";
+				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbi/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

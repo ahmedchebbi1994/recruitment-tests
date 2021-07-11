@@ -69,7 +69,7 @@ class ManagerBooksService: ApiService, BooksServiceProtocol {
             + "/"
         
         basket.forEach { book in
-            booksOffers += book.isbn
+            booksOffers += book.isbn ?? ""
             booksOffers += ","
         }
                 

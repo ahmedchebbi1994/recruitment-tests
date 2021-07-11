@@ -6,8 +6,8 @@
 //
 
 struct Book: Codable {
-    let isbn, title: String
-    let price: Int
-    let cover: String
-    let synopsis: [String]
+    let isbn, title: String?
+    let price: Int?
+    let cover: String?
+    let synopsis: [String]?
 }
