@@ -108,6 +108,7 @@ final class BookCell: UITableViewCell {
         button.layer.borderColor = UIColor.corporateDarkBlue.cgColor
         button.layer.cornerRadius = 10.0
         button.titleEdgeInsets = UIEdgeInsets(top: 0,left: 5,bottom: 0,right: 5)
+        button.addTarget(self, action: #selector(actionButton), for: .touchUpInside)
         return button
     }()
     private(set) lazy var mainStackView: UIStackView = {
@@ -120,6 +121,7 @@ final class BookCell: UITableViewCell {
     }()
     
     
+    var viewModel: BookViewModel?
     
     
     // MARK: - Init
@@ -239,6 +241,7 @@ final class BookCell: UITableViewCell {
     
     // MARK: - Bind ViewModel
     func bind(to viewModel: BookViewModel){
+        self.viewModel = viewModel
         self.titleTxt.text = viewModel.displayTitle
         self.priceTxt.text = viewModel.displayPrice
         self.synopsisCountTxt.text = viewModel.displaySynopsisCount
@@ -261,4 +264,9 @@ final class BookCell: UITableViewCell {
         }
     }
     
+    @objc func actionButton() {
+        if let book = viewModel?.book {
+            ManagerBaskets.shared.add(book: book)
+        }
+    }
 }

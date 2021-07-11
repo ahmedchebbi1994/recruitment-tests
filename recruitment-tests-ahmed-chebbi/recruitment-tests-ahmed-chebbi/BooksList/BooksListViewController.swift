@@ -19,8 +19,15 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
         view.backgroundColor =  .corporateWhite
         
         //Setup Button bar item
-        let books = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(displayAllBasket))
+        let books = UIBarButtonItem(title: "Books", style: .done, target: self, action: #selector(displayAllBasket))
         navigationItem.rightBarButtonItems = [books]
+        
+        //Setup Observer for add book to basket
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.refreshBasketCount),
+            name: NSNotification.Name("BookAdded"),
+            object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,11 +55,14 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
             self.layout.tableView.reloadData()
         }
     }
-    
-    @objc func displayAllBasket() {
-        
+    @objc func refreshBasketCount() {
+        let books = UIBarButtonItem(title: "Books \(ManagerBaskets.shared.countBooksBaskets())", style: .done, target: self, action: #selector(displayAllBasket))
+        navigationItem.rightBarButtonItems = [books]
     }
- 
+    @objc func displayAllBasket() {
+        // TO DO
+    }
+    
 }
 extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
     

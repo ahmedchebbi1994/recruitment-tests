@@ -7,7 +7,7 @@
 
 struct BookViewModel {
     
-    private let book: Book
+    let book: Book
  
  
     var displayTitle: String {

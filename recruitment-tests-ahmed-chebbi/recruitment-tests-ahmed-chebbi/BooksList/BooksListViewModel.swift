@@ -19,21 +19,16 @@ struct BooksListViewModel {
     init(service: BooksServiceProtocol = ManagerBooksService(),coordinator: BooksListCoordinator) {
         self.service = service
         self.coordinator = coordinator
-        
-        
     }
     
     func fetchAllBooks(completion: @escaping ([BookViewModel]) -> Void) {
-        
         service.fetchAllBooks { (resources) in
             var data: [BookViewModel] = []
             resources.forEach { (resource) in
                 data.append(BookViewModel(book: resource))
             }
             completion(data)
-        }
- 
-        
+        }        
     }
     
 }

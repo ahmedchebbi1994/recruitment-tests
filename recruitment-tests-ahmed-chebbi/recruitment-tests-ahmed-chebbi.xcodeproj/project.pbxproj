@@ -26,6 +26,7 @@
 		72DD0986269B6C3900A687A1 /* UIColors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0985269B6C3900A687A1 /* UIColors+Extension.swift */; };
 		72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0988269B6CA300A687A1 /* BookCell.swift */; };
 		72DD098D269BA31E00A687A1 /* LoaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD098C269BA31E00A687A1 /* LoaderImage.swift */; };
+		72DD0991269BB46000A687A1 /* ManagerBaskets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0990269BB46000A687A1 /* ManagerBaskets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		72DD0985269B6C3900A687A1 /* UIColors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Extension.swift"; sourceTree = "<group>"; };
 		72DD0988269B6CA300A687A1 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		72DD098C269BA31E00A687A1 /* LoaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderImage.swift; sourceTree = "<group>"; };
+		72DD0990269BB46000A687A1 /* ManagerBaskets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerBaskets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,15 +84,13 @@
 		72DD094F269B572000A687A1 /* recruitment-tests-ahmed-chebbi */ = {
 			isa = PBXGroup;
 			children = (
-				72DD0984269B6C2300A687A1 /* Utils */,
 				72DD097F269B6BA100A687A1 /* Base */,
+				72DD0984269B6C2300A687A1 /* Utils */,
 				72DD0974269B6A2700A687A1 /* BooksList */,
 				72DD0973269B69BA00A687A1 /* Resources */,
 				72DD0964269B57F700A687A1 /* Networks */,
 				72DD0950269B572000A687A1 /* AppDelegate.swift */,
 				72DD0971269B68DF00A687A1 /* AppCoordinator.swift */,
-				72DD0959269B572200A687A1 /* Assets.xcassets */,
-				72DD095B269B572200A687A1 /* LaunchScreen.storyboard */,
 			);
 			path = "recruitment-tests-ahmed-chebbi";
 			sourceTree = "<group>";
@@ -102,6 +102,7 @@
 				72DD0967269B5A1B00A687A1 /* Models */,
 				72DD0965269B594800A687A1 /* ApiService.swift */,
 				72DD096C269B5ADE00A687A1 /* ManagerBooksService.swift */,
+				72DD0990269BB46000A687A1 /* ManagerBaskets.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -126,6 +127,8 @@
 		72DD0973269B69BA00A687A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72DD0959269B572200A687A1 /* Assets.xcassets */,
+				72DD095B269B572200A687A1 /* LaunchScreen.storyboard */,
 				72DD095E269B572200A687A1 /* Info.plist */,
 			);
 			path = Resources;
@@ -136,10 +139,10 @@
 			children = (
 				72DD097B269B6B0A00A687A1 /* BooksListViewController.swift */,
 				72DD0979269B6AE600A687A1 /* BooksListView.swift */,
+				72DD097D269B6B2E00A687A1 /* BooksListViewModel.swift */,
 				72DD0987269B6C8C00A687A1 /* Cells */,
 				72DD0975269B6A4500A687A1 /* BooksListCoordinator.swift */,
 				72DD0977269B6A6300A687A1 /* BookViewModel.swift */,
-				72DD097D269B6B2E00A687A1 /* BooksListViewModel.swift */,
 			);
 			path = BooksList;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				72DD097C269B6B0A00A687A1 /* BooksListViewController.swift in Sources */,
 				72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */,
 				72DD0981269B6BAA00A687A1 /* ReusableUIView.swift in Sources */,
+				72DD0991269BB46000A687A1 /* ManagerBaskets.swift in Sources */,
 				72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */,
 				72DD0978269B6A6300A687A1 /* BookViewModel.swift in Sources */,
 				72DD0986269B6C3900A687A1 /* UIColors+Extension.swift in Sources */,
