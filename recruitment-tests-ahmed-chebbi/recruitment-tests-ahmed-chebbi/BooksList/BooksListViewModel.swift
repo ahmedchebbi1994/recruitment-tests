@@ -13,6 +13,11 @@ struct BooksListViewModel {
     private let serviceBasket: BasketsServiceProtocol
     var coordinator: BooksListCoordinator?
     
+    init(service: BooksServiceProtocol = ManagerBooksService(),serviceBasket: BasketsServiceProtocol = ManagerBaskets.shared) {
+        self.service = service
+        self.serviceBasket = serviceBasket
+    }
+    
     init(service: BooksServiceProtocol = ManagerBooksService(),serviceBasket: BasketsServiceProtocol = ManagerBaskets.shared,coordinator: BooksListCoordinator) {
         self.service = service
         self.coordinator = coordinator

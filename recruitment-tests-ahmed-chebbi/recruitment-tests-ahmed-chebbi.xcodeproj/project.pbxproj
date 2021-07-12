@@ -35,7 +35,20 @@
 		72DD099F269BEE4D00A687A1 /* DetailsBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD099E269BEE4D00A687A1 /* DetailsBookViewController.swift */; };
 		72DD09A1269BEE6400A687A1 /* DetailsBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD09A0269BEE6400A687A1 /* DetailsBookViewModel.swift */; };
 		72DD09A3269BEE7F00A687A1 /* DetailsBookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD09A2269BEE7F00A687A1 /* DetailsBookCoordinator.swift */; };
+		72DD09AB269C312500A687A1 /* recruitment_tests_ahmed_chebbiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD09AA269C312500A687A1 /* recruitment_tests_ahmed_chebbiTests.swift */; };
+		72DD09B4269C39FA00A687A1 /* MockBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD09B3269C39FA00A687A1 /* MockBooksService.swift */; };
+		72DD09B6269C3CD900A687A1 /* BooksListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD09B5269C3CD900A687A1 /* BooksListViewModelSpec.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72DD09AD269C312500A687A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72DD0945269B572000A687A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72DD094C269B572000A687A1;
+			remoteInfo = "recruitment-tests-ahmed-chebbi";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		72DD094D269B572000A687A1 /* recruitment-tests-ahmed-chebbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recruitment-tests-ahmed-chebbi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +81,22 @@
 		72DD099E269BEE4D00A687A1 /* DetailsBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBookViewController.swift; sourceTree = "<group>"; };
 		72DD09A0269BEE6400A687A1 /* DetailsBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBookViewModel.swift; sourceTree = "<group>"; };
 		72DD09A2269BEE7F00A687A1 /* DetailsBookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBookCoordinator.swift; sourceTree = "<group>"; };
+		72DD09A8269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "recruitment-tests-ahmed-chebbiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DD09AA269C312500A687A1 /* recruitment_tests_ahmed_chebbiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recruitment_tests_ahmed_chebbiTests.swift; sourceTree = "<group>"; };
+		72DD09AC269C312500A687A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DD09B3269C39FA00A687A1 /* MockBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBooksService.swift; sourceTree = "<group>"; };
+		72DD09B5269C3CD900A687A1 /* BooksListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		72DD094A269B572000A687A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DD09A5269C312500A687A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				72DD094F269B572000A687A1 /* recruitment-tests-ahmed-chebbi */,
+				72DD09A9269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests */,
 				72DD094E269B572000A687A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				72DD094D269B572000A687A1 /* recruitment-tests-ahmed-chebbi.app */,
+				72DD09A8269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +240,17 @@
 			path = DetailsBook;
 			sourceTree = "<group>";
 		};
+		72DD09A9269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests */ = {
+			isa = PBXGroup;
+			children = (
+				72DD09B3269C39FA00A687A1 /* MockBooksService.swift */,
+				72DD09B5269C3CD900A687A1 /* BooksListViewModelSpec.swift */,
+				72DD09AA269C312500A687A1 /* recruitment_tests_ahmed_chebbiTests.swift */,
+				72DD09AC269C312500A687A1 /* Info.plist */,
+			);
+			path = "recruitment-tests-ahmed-chebbiTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +271,24 @@
 			productReference = 72DD094D269B572000A687A1 /* recruitment-tests-ahmed-chebbi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		72DD09A7269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DD09AF269C312500A687A1 /* Build configuration list for PBXNativeTarget "recruitment-tests-ahmed-chebbiTests" */;
+			buildPhases = (
+				72DD09A4269C312500A687A1 /* Sources */,
+				72DD09A5269C312500A687A1 /* Frameworks */,
+				72DD09A6269C312500A687A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72DD09AE269C312500A687A1 /* PBXTargetDependency */,
+			);
+			name = "recruitment-tests-ahmed-chebbiTests";
+			productName = "recruitment-tests-ahmed-chebbiTests";
+			productReference = 72DD09A8269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +300,10 @@
 				TargetAttributes = {
 					72DD094C269B572000A687A1 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					72DD09A7269C312500A687A1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 72DD094C269B572000A687A1;
 					};
 				};
 			};
@@ -261,6 +321,7 @@
 			projectRoot = "";
 			targets = (
 				72DD094C269B572000A687A1 /* recruitment-tests-ahmed-chebbi */,
+				72DD09A7269C312500A687A1 /* recruitment-tests-ahmed-chebbiTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +333,13 @@
 			files = (
 				72DD095D269B572200A687A1 /* LaunchScreen.storyboard in Resources */,
 				72DD095A269B572200A687A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DD09A6269C312500A687A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +379,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DD09A4269C312500A687A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DD09B6269C3CD900A687A1 /* BooksListViewModelSpec.swift in Sources */,
+				72DD09B4269C39FA00A687A1 /* MockBooksService.swift in Sources */,
+				72DD09AB269C312500A687A1 /* recruitment_tests_ahmed_chebbiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72DD09AE269C312500A687A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72DD094C269B572000A687A1 /* recruitment-tests-ahmed-chebbi */;
+			targetProxy = 72DD09AD269C312500A687A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		72DD095B269B572200A687A1 /* LaunchScreen.storyboard */ = {
@@ -477,6 +563,44 @@
 			};
 			name = Release;
 		};
+		72DD09B0269C312500A687A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recruitment.tests.recruitment-tests-ahmed-chebbiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recruitment-tests-ahmed-chebbi.app/recruitment-tests-ahmed-chebbi";
+			};
+			name = Debug;
+		};
+		72DD09B1269C312500A687A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "recruitment-tests-ahmed-chebbiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recruitment.tests.recruitment-tests-ahmed-chebbiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recruitment-tests-ahmed-chebbi.app/recruitment-tests-ahmed-chebbi";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,6 +618,15 @@
 			buildConfigurations = (
 				72DD0962269B572200A687A1 /* Debug */,
 				72DD0963269B572200A687A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DD09AF269C312500A687A1 /* Build configuration list for PBXNativeTarget "recruitment-tests-ahmed-chebbiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DD09B0269C312500A687A1 /* Debug */,
+				72DD09B1269C312500A687A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
