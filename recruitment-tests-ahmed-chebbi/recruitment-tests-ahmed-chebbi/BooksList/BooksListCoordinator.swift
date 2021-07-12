@@ -38,4 +38,11 @@ final class BooksListCoordinator: Coordinator {
         commercialOfferCoordinator.parentCoordinator = self
         commercialOfferCoordinator.start()
     }
+    
+    func showDetailsBook(viewModel: BookViewModel){
+        let detailsBookCoordinator = DetailsBookCoordinator(navigationController: navigationController)
+        childCoordinators.append(detailsBookCoordinator)
+        detailsBookCoordinator.parentCoordinator = self
+        detailsBookCoordinator.start(viewModel: viewModel)
+    }
 }

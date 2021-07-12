@@ -43,4 +43,8 @@ struct BooksListViewModel {
         }
     }
     
+    func showDetailsBook(viewModel: BookViewModel){
+        coordinator?.showDetailsBook(viewModel: viewModel)
+    }
+    
 }

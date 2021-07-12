@@ -84,4 +84,8 @@ extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.showDetailsBook(viewModel: dataResources[indexPath.row])
+    }
+    
 }
