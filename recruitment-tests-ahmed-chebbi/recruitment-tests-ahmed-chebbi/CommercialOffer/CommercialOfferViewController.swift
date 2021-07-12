@@ -20,11 +20,22 @@ class CommercialOfferViewController: BindableViewController<CommercialOfferView,
         loadData()
     }
     
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewModel.viewDidDisapper()
+    }
  
     func bindViewModel() {
         layout.tableView.delegate = self
         layout.tableView.dataSource = self
         title = "Baskets"
+        layout.priceTxt.attributedText = viewModel.totalPrices().strikeThrough()
+        viewModel.totalPricesOffers(completion: { priceOffer in
+            DispatchQueue.main.async {
+                self.layout.priceDiscountTxt.text = priceOffer
+            }
+        })
     }
     
     private func loadData(){
@@ -32,6 +43,19 @@ class CommercialOfferViewController: BindableViewController<CommercialOfferView,
         viewModel.fetchAllBooks { (data) in
             self.dataResources = data
             self.reloadTableView()
+        }
+    }
+    
+    private func reloadBottomView(){
+        layout.priceTxt.attributedText = viewModel.totalPrices().strikeThrough()
+        viewModel.totalPricesOffers(completion: { priceOffer in
+            DispatchQueue.main.async {
+                self.layout.priceDiscountTxt.text = priceOffer
+            }
+        })
+        
+        if dataResources.isEmpty {
+            viewModel.backToMainView()
         }
     }
     
@@ -67,6 +91,8 @@ extension CommercialOfferViewController: UITableViewDelegate, UITableViewDataSou
                 dataResources.remove(at: indexPath.row)
             }
             tableView.reloadData()
+            reloadBottomView()
         }
     }
+
 }

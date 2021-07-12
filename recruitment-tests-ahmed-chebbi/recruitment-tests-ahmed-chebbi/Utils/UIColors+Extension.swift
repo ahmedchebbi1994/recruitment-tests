@@ -46,3 +46,17 @@ extension Sequence where Element: Hashable {
         return self.reduce(into: [:]) { counts, elem in counts[elem, default: 0] += 1 }
     }
 }
+
+extension String {
+
+  /// Apply strike font on text
+  func strikeThrough() -> NSAttributedString {
+    let attributeString = NSMutableAttributedString(string: self)
+    attributeString.addAttribute(
+      NSAttributedString.Key.strikethroughStyle,
+      value: 1,
+      range: NSRange(location: 0, length: attributeString.length))
+
+      return attributeString
+     }
+}

@@ -33,4 +33,12 @@ final class CommercialOfferCoordinator: Coordinator {
             childCoordinators.remove(at: index)
         }
     }
+    
+    func viewDidDisapper(){
+        parentCoordinator?.childDidFinish(self)
+    }
+    
+    func backToParentView(){
+        navigationController.popViewController(animated: true)
+    }
 }

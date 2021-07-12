@@ -9,6 +9,7 @@ import UIKit
 
 final class BookCell: UITableViewCell {
     
+    // MARK: - Property
     static let padding: CGFloat = 5.0
     
     static let heightCell: CGFloat = 200.0
@@ -23,7 +24,6 @@ final class BookCell: UITableViewCell {
     static let multiplerWidth: CGFloat = 0.3
     static let paddingImage: CGFloat = 15.0
 
-    // MARK: - Property
     static let identifier = "BookCell"
     
     // MARK: - IOutlet

@@ -6,7 +6,7 @@
 //
 
 struct Offer: Codable {
-    let type: String
-    let value: Int
+    let type: String?
+    let value: Double?
     let sliceValue: Int?
 }
