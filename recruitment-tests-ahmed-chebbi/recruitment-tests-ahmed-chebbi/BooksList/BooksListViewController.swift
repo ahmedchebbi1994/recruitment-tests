@@ -30,9 +30,14 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
             object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadData()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadData()
+        refreshBasketCount()
     }
     
     func bindViewModel() {
@@ -56,7 +61,7 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
         }
     }
     @objc func refreshBasketCount() {
-        let books = UIBarButtonItem(title: "Books \(ManagerBaskets.shared.countBooksBaskets())", style: .done, target: self, action: #selector(displayAllBasket))
+        let books = UIBarButtonItem(title: "\(viewModel.countBooksInBaskets())", style: .done, target: self, action: #selector(displayAllBasket))
         navigationItem.rightBarButtonItems = [books]
     }
     @objc func displayAllBasket() {

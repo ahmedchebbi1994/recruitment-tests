@@ -11,6 +11,7 @@ protocol BasketsServiceProtocol {
     func add(book: Book)
     func countBooksBaskets() -> Int
     func fetchAllBooks() -> [Book]
+    func removeBook(book: Book)
 }
 
 
@@ -34,4 +35,13 @@ class ManagerBaskets: BasketsServiceProtocol {
         return booksBaskets.count
     }
     
+    func removeBook(book: Book) {
+        for i in 0...booksBaskets.count-1 {
+            let item = booksBaskets[i]
+            if book.isbn == item.isbn {
+                booksBaskets.remove(at: i)
+                break
+            }
+        }
+    }
 }

@@ -58,4 +58,15 @@ extension CommercialOfferViewController: UITableViewDelegate, UITableViewDataSou
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel.removeBooks(bookModel: dataResources[indexPath.row])
+            if dataResources[indexPath.row].1 > 1 {
+                dataResources[indexPath.row].1 = dataResources[indexPath.row].1 - 1
+            } else {
+                dataResources.remove(at: indexPath.row)
+            }
+            tableView.reloadData()
+        }
+    }
 }

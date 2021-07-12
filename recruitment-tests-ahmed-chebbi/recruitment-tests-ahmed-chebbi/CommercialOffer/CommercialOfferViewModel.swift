@@ -27,6 +27,9 @@ struct CommercialOfferViewModel {
     }
     
  
+    func removeBooks(bookModel: (BookViewModel,Int)){
+        service.removeBook(book: bookModel.0.book)
+    }
   
     
 }
