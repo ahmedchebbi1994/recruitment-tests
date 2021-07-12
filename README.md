@@ -5,7 +5,7 @@
 ### -----------Display books list
 ### -----------Display defails of book
 ### -----------Manage my local basket (add, remove) book
-### -----------Display commercial offer depend books added in local basket
+### -----------Display commercial offer depends on the books added in local basket
 
 
 
