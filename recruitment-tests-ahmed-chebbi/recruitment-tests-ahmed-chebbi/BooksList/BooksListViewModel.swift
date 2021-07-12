@@ -32,9 +32,9 @@ struct BooksListViewModel {
     func countBooksInBaskets() -> String{
         let count = serviceBasket.countBooksBaskets()
         if count != 0 {
-            return "Books \(count)"
+            return "Basket \(count)"
         }
-        return "Books"
+        return "Basket"
     }
     
     func showBaskets(){

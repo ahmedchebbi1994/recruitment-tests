@@ -19,7 +19,7 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
         view.backgroundColor =  .corporateWhite
         
         //Setup Button bar item
-        let books = UIBarButtonItem(title: "Books", style: .done, target: self, action: #selector(displayAllBasket))
+        let books = UIBarButtonItem(title: "Basket", style: .done, target: self, action: #selector(displayAllBasket))
         navigationItem.rightBarButtonItems = [books]
         
         //Setup Observer for add book to basket
