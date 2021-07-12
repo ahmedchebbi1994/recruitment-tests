@@ -33,6 +33,7 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         loadData()
+        viewModel.updatePrefersLargeTitle(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,5 +88,7 @@ extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.showDetailsBook(viewModel: dataResources[indexPath.row])
     }
+    
+    
     
 }

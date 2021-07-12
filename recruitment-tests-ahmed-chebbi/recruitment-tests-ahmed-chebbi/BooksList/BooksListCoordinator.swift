@@ -17,6 +17,10 @@ final class BooksListCoordinator: Coordinator {
         self.navigationController.navigationBar.prefersLargeTitles = true
     }
     
+    func updatePrefersLargeTitle(_ isTrue: Bool) {
+        self.navigationController.navigationBar.prefersLargeTitles = isTrue
+    }
+    
     func start() {
         let booksListViewModel = BooksListViewModel(coordinator: self)
         var booksListViewController = BooksListViewController()

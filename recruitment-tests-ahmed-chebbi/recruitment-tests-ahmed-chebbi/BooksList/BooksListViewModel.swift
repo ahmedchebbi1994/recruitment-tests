@@ -47,4 +47,8 @@ struct BooksListViewModel {
         coordinator?.showDetailsBook(viewModel: viewModel)
     }
     
+    func updatePrefersLargeTitle(_ isTrue: Bool){
+        coordinator?.updatePrefersLargeTitle(isTrue)
+    }
+    
 }

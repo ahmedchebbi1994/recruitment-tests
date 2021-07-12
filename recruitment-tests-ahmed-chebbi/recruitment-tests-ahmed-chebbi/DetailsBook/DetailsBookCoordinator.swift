@@ -18,6 +18,7 @@ final class DetailsBookCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.navigationBar.prefersLargeTitles = false
     }
     
     func start() {
