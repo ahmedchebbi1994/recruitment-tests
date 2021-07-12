@@ -60,7 +60,7 @@ final class BooksListViewController: BindableViewController<BooksListView, Books
         navigationItem.rightBarButtonItems = [books]
     }
     @objc func displayAllBasket() {
-        // TO DO
+        viewModel.showBaskets()
     }
     
 }

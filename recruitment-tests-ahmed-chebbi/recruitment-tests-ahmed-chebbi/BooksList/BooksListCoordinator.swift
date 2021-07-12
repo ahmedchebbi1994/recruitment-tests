@@ -31,4 +31,11 @@ final class BooksListCoordinator: Coordinator {
             childCoordinators.remove(at: index)
         }
     }
+    
+    func showBaskets() {
+        let commercialOfferCoordinator = CommercialOfferCoordinator(navigationController: navigationController)
+        childCoordinators.append(commercialOfferCoordinator)
+        commercialOfferCoordinator.parentCoordinator = self
+        commercialOfferCoordinator.start()
+    }
 }

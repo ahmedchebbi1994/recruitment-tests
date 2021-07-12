@@ -111,6 +111,15 @@ final class BookCell: UITableViewCell {
         button.addTarget(self, action: #selector(actionButton), for: .touchUpInside)
         return button
     }()
+    private(set) lazy var numberItemTxt: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = .corporateDarkBlue
+        label.numberOfLines = 0
+        label.isHidden = true
+        return label
+    }()
     private(set) lazy var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
@@ -141,6 +150,7 @@ final class BookCell: UITableViewCell {
     func setupUI() {
         bottomViewDescription.addSubview(priceTxt)
         bottomViewDescription.addSubview(addButton)
+        bottomViewDescription.addSubview(numberItemTxt)
         
         descriptionStackView.addArrangedSubview(titleTxt)
         descriptionStackView.addArrangedSubview(synopsisCountTxt)
@@ -198,7 +208,13 @@ final class BookCell: UITableViewCell {
             addButton.topAnchor.constraint(equalTo: bottomViewDescription.topAnchor),
             addButton.bottomAnchor.constraint(equalTo: bottomViewDescription.bottomAnchor),
             addButton.trailingAnchor.constraint(equalTo: bottomViewDescription.trailingAnchor,constant: -30.0),
-            addButton.widthAnchor.constraint(equalToConstant: 100.0)
+            addButton.widthAnchor.constraint(equalToConstant: 100.0),
+            
+            numberItemTxt.topAnchor.constraint(equalTo: bottomViewDescription.topAnchor),
+            numberItemTxt.bottomAnchor.constraint(equalTo: bottomViewDescription.bottomAnchor),
+            numberItemTxt.trailingAnchor.constraint(equalTo: bottomViewDescription.trailingAnchor,constant: -30.0),
+            numberItemTxt.widthAnchor.constraint(equalToConstant: 100.0)
+            
 
         ])
     }
@@ -240,7 +256,7 @@ final class BookCell: UITableViewCell {
  
     
     // MARK: - Bind ViewModel
-    func bind(to viewModel: BookViewModel){
+    func bind(to viewModel: BookViewModel, countItem: Int = 0){
         self.viewModel = viewModel
         self.titleTxt.text = viewModel.displayTitle
         self.priceTxt.text = viewModel.displayPrice
@@ -261,6 +277,12 @@ final class BookCell: UITableViewCell {
             }
         } else {
             self.imageBookView.image = UIImage(named: "defaultImage")
+        }
+        if  countItem == 0  {
+            self.numberItemTxt.isHidden = true
+        } else {
+            self.numberItemTxt.isHidden = false
+            self.numberItemTxt.text = "Quantity: \(countItem)"
         }
     }
     

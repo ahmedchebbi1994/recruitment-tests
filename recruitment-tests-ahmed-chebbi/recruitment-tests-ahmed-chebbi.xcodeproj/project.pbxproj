@@ -27,6 +27,10 @@
 		72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0988269B6CA300A687A1 /* BookCell.swift */; };
 		72DD098D269BA31E00A687A1 /* LoaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD098C269BA31E00A687A1 /* LoaderImage.swift */; };
 		72DD0991269BB46000A687A1 /* ManagerBaskets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0990269BB46000A687A1 /* ManagerBaskets.swift */; };
+		72DD0994269BBE4500A687A1 /* CommercialOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0993269BBE4500A687A1 /* CommercialOfferViewController.swift */; };
+		72DD0996269BBE8500A687A1 /* CommercialOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0995269BBE8500A687A1 /* CommercialOfferView.swift */; };
+		72DD0998269BBE9000A687A1 /* CommercialOfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0997269BBE9000A687A1 /* CommercialOfferViewModel.swift */; };
+		72DD099A269BC3A200A687A1 /* CommercialOfferCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DD0999269BC3A200A687A1 /* CommercialOfferCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		72DD0988269B6CA300A687A1 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		72DD098C269BA31E00A687A1 /* LoaderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderImage.swift; sourceTree = "<group>"; };
 		72DD0990269BB46000A687A1 /* ManagerBaskets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerBaskets.swift; sourceTree = "<group>"; };
+		72DD0993269BBE4500A687A1 /* CommercialOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialOfferViewController.swift; sourceTree = "<group>"; };
+		72DD0995269BBE8500A687A1 /* CommercialOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialOfferView.swift; sourceTree = "<group>"; };
+		72DD0997269BBE9000A687A1 /* CommercialOfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialOfferViewModel.swift; sourceTree = "<group>"; };
+		72DD0999269BC3A200A687A1 /* CommercialOfferCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialOfferCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 				72DD097F269B6BA100A687A1 /* Base */,
 				72DD0984269B6C2300A687A1 /* Utils */,
 				72DD0974269B6A2700A687A1 /* BooksList */,
+				72DD0992269BBDE600A687A1 /* CommercialOffer */,
 				72DD0973269B69BA00A687A1 /* Resources */,
 				72DD0964269B57F700A687A1 /* Networks */,
 				72DD0950269B572000A687A1 /* AppDelegate.swift */,
@@ -173,6 +182,17 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		72DD0992269BBDE600A687A1 /* CommercialOffer */ = {
+			isa = PBXGroup;
+			children = (
+				72DD0993269BBE4500A687A1 /* CommercialOfferViewController.swift */,
+				72DD0995269BBE8500A687A1 /* CommercialOfferView.swift */,
+				72DD0997269BBE9000A687A1 /* CommercialOfferViewModel.swift */,
+				72DD0999269BC3A200A687A1 /* CommercialOfferCoordinator.swift */,
+			);
+			path = CommercialOffer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,19 +267,23 @@
 				72DD096D269B5ADE00A687A1 /* ManagerBooksService.swift in Sources */,
 				72DD097E269B6B2E00A687A1 /* BooksListViewModel.swift in Sources */,
 				72DD0983269B6BE200A687A1 /* BindableViewController.swift in Sources */,
+				72DD0996269BBE8500A687A1 /* CommercialOfferView.swift in Sources */,
 				72DD097A269B6AE600A687A1 /* BooksListView.swift in Sources */,
 				72DD097C269B6B0A00A687A1 /* BooksListViewController.swift in Sources */,
 				72DD0989269B6CA300A687A1 /* BookCell.swift in Sources */,
 				72DD0981269B6BAA00A687A1 /* ReusableUIView.swift in Sources */,
+				72DD099A269BC3A200A687A1 /* CommercialOfferCoordinator.swift in Sources */,
 				72DD0991269BB46000A687A1 /* ManagerBaskets.swift in Sources */,
 				72DD0970269B5FD900A687A1 /* ResponseOffers.swift in Sources */,
 				72DD0978269B6A6300A687A1 /* BookViewModel.swift in Sources */,
 				72DD0986269B6C3900A687A1 /* UIColors+Extension.swift in Sources */,
 				72DD098D269BA31E00A687A1 /* LoaderImage.swift in Sources */,
+				72DD0998269BBE9000A687A1 /* CommercialOfferViewModel.swift in Sources */,
 				72DD0951269B572000A687A1 /* AppDelegate.swift in Sources */,
 				72DD0966269B594800A687A1 /* ApiService.swift in Sources */,
 				72DD0972269B68DF00A687A1 /* AppCoordinator.swift in Sources */,
 				72DD0969269B5A2900A687A1 /* Book.swift in Sources */,
+				72DD0994269BBE4500A687A1 /* CommercialOfferViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

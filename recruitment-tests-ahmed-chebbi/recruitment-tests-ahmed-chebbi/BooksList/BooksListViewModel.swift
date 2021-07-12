@@ -10,15 +10,13 @@ import Foundation
 struct BooksListViewModel {
     
     private let service : BooksServiceProtocol
+    private let serviceBasket: BasketsServiceProtocol
     var coordinator: BooksListCoordinator?
     
-    init(service: BooksServiceProtocol = ManagerBooksService()){
-        self.service = service
-    }
-    
-    init(service: BooksServiceProtocol = ManagerBooksService(),coordinator: BooksListCoordinator) {
+    init(service: BooksServiceProtocol = ManagerBooksService(),serviceBasket: BasketsServiceProtocol = ManagerBaskets.shared,coordinator: BooksListCoordinator) {
         self.service = service
         self.coordinator = coordinator
+        self.serviceBasket = serviceBasket
     }
     
     func fetchAllBooks(completion: @escaping ([BookViewModel]) -> Void) {
@@ -29,6 +27,12 @@ struct BooksListViewModel {
             }
             completion(data)
         }        
+    }
+    
+    func showBaskets(){
+        if serviceBasket.countBooksBaskets() != 0 {
+            coordinator?.showBaskets()
+        }
     }
     
 }
