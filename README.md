@@ -3,7 +3,7 @@
 ## Available features
 
 ### -----------Display books list
-### -----------Display defails of book
+### -----------Display details of book
 ### -----------Manage my local basket (add, remove) book
 ### -----------Display commercial offer depends on the books added in local basket
 
